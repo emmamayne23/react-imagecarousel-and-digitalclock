@@ -1,0 +1,34 @@
+import Header from "./components/Header"
+import DigitalClock from "./components/DigitalClock"
+import Slider from "./components/Slider"
+
+import image1 from "./assets/images/image1.png"
+import image2 from "./assets/images/image2.png"
+import image3 from "./assets/images/image3.png"
+import image4 from "./assets/images/image4.png"
+import image5 from "./assets/images/image5.png"
+import image6 from "./assets/images/image6.png"
+import image7 from "./assets/images/image7.png"
+import image8 from "./assets/images/image8.png"
+import image9 from "./assets/images/image9.png"
+import image10 from "./assets/images/image10.png"
+import image11 from "./assets/images/image11.png"
+
+function App() {
+
+  const imagesUrls = [
+  image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11
+  ]
+
+  return (
+    <>
+      <div className="my-10">
+        <Header />
+      </div>
+      <DigitalClock />
+      <Slider images={imagesUrls} />
+    </>
+  )
+}
+
+export default App
